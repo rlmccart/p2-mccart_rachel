@@ -1,0 +1,79 @@
+* {
+    text-align: center;
+    margin: 0;
+}
+/* font-family: 'Playfair Display', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+body {
+    background-color: paleturquoise;
+    overflow-x: hidden;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+    padding: 50px;
+    font-size: 2.5rem;
+    color: #2C2A4A;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    padding-bottom: 40px;
+    color: #53536D; 
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    background-color: transparent;
+    border: transparent; 
+    text-transform: uppercase;
+}
+.red-square {
+    width: 45%; 
+    height: 45%; 
+    float: left;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    padding-bottom: 25%; 
+    position: relative; 
+    background-color: #ff0040;
+}
+.teal-square {
+    width: 45%; 
+    height: 45%;  
+    float: right;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    padding-bottom: 25%; 
+    position: relative; 
+    background-color: #00a6a6;
+}
+.yellow-square {
+    width: 45%; 
+    height: 45%;  
+    float: left;
+    margin-left: 3%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    padding-bottom: 25%; 
+    position: relative; 
+    background-color: #efca08;
+}
+.orange-square {
+    width: 45%; 
+    height: 45%; 
+    float: right;
+    margin-right: 3%;
+    margin-top: 1%;
+    padding-bottom: 25%; 
+    position: relative; 
+    background-color: #f49f0a;
+}
+.hide {
+    display: none;
+}
