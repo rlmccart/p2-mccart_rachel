@@ -49,10 +49,55 @@ function countClicks() {
     clicks++;
 };
 
+function wrapperTwo() {
+    var _thisTwo = this;
+    
+    var numberSelect = this.parentNode;
+    var showNumber = function showNumber() {
+        numberSelect.classList.toggle('opaque');
+    };
+    
+    var magicFortunes = ['The fortune you seek is in another cookie', 'That is what she said', 'You will be hungry again in one hour', 'Loading', 'It is a good day to have a good day', 'That was not chicken', 'I am worth a fortune', 'Go ask your mom', 'You have rice in your teeth', 'No lucky numbers today']; 
+    var fortuneGoesHere = document.querySelector('#wrapper p span');
+    var fortuneTextPlaceholder = document.createTextNode(''); 
+    fortuneGoesHere.appendChild(fortuneTextPlaceholder);
+    
+    var showFortune = function showFortune() {
+        fortuneWrapper.classList.toggle('hide');
+        numberSquares.classList.toggle('hide');
+        magicFortunes.sort(function (a.b) {
+            return 0.5 - Math.random();
+        });
+        var fortuneText = document.createTextNode(magicFortunes[0]);
+        fortuneGoesHere.appendChild(fortuneText);
+    };
+    
+    var loopThroughTwo = function loopThroughTwo() {
+        var numberText = _thisTwo.childNodes[0].nodeValue;
+        var numberValue = parseInt(numberText);
+        var numberValueTwo = numberValue * 2;
+        for (var i = 0; i < numberValueTwo; i++) {
+            setTimeout(function() {
+                showNumber();
+            }, i * 500);
+        };
+    };
+    var runFunction = function functionRun() {
+        if (clicks < 1) {
+            loopThroughTwo();
+        } else if (clicks === 1) {
+            showFortune();
+        };
+    };
+    runFunction(); 
+};
 
-//Create Placeholder Text 
-//var fortuneTextPlaceholder = document.createTextNode('');
-//yourFortune.appendChild(fortuneTextPlaceholder);
+for (var i = 0; i < colorName.length; i++) {
+    colorName[i].addEventListener('click', wrapper);
+    numberName[i].addEventListener('click', wrapperTwo);
+    numberName[i].addEventListener('click', countClicks);
+};
 
-//var magicFortunes = ['The fortune you seek is in another cookie', 'That is what she said', 'You will be hungry again in one hour', 'Loading', 'It is a good day to have a good day', 'That was not chicken', 'I am worth a fortune', 'Go ask your mom', 'You have rice in your teeth', 'No lucky numbers today']; 
+
+
 
