@@ -170,16 +170,16 @@ h2 {
 /*.fortune-show {
     transition: ease 5s;
 } */
-.reset {
+/*.reset {
     width: 100%;
     position: fixed;
-}
+} */
 button {
     background-color: #ff0040; 
 	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    margin-top: 70%;
+    margin-top: 40px;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 0.5%;
