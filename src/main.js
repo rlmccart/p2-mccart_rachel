@@ -27,7 +27,9 @@ function functionWrapper () {
             //Display numbers 
             setTimeout(function(){
             colorSection[0].classList.add('hide');
+            colorSection[0].classList.remove('show');    
             numberSection[0].classList.add('show'); 
+            numberSection[0].classList.remove('hide');    
             }, thisColorLength * 1000);
         };  
     runColor();
