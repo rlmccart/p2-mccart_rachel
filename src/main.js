@@ -1,5 +1,6 @@
 const colorSection = document.getElementsByClassName('colors');
 const numberSection = document.getElementsByClassName('numbers');
+const colorSectionTwo = document.getElementsByClassName('colorstwo');
 const fortuneColor = document.querySelectorAll('.colors p'); 
 const fortuneNumber = document.querySelectorAll('.numbers p'); 
 
@@ -53,9 +54,9 @@ function functionWrapperTwo () {
             }
             setTimeout(function(){
             colorSection[0].classList.add('hide');
-            colorSection[0].classList.add('show');
+            colorSection[0].classList.remove('show');
             numberSection[0].classList.remove('hide');
-            numberSection[0].classList.remove('show'); 
+            numberSection[0].classList.add('show'); 
             }, numberValue * 1000);
         };  
     runColorTwo();
@@ -66,7 +67,7 @@ function functionWrapperTwo () {
 function functionWrapperThree () {
     
     const flashTransitionThree  = () => {
-        numberSection[0].classList.toggle('transition');
+        colorSectionTwo[0].classList.toggle('transition');
     };
    
     const runColorThree = () => {
