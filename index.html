@@ -15,45 +15,68 @@
 			<h1 class="animated tada">Fortune Teller Game</h1>
 		</header>
         <main>
-            <h2>Click a colored square to get your fortune:</h2>
-            
-            <section id="one">
-                <div class="squares">
-                    <div class="red-square">
-                        <p>red</p>
+            <h2>Pick a color to get your fortune:</h2>
+
+                <div class="colors">
+                    
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="red">Red</p>
+                        </section>
                     </div>
-                    <div class="teal-square">
-                        <p>teal</p>
+                    
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="teal">Teal</p>
+                        </section>
                     </div>
-                    <div class="yellow-square">
-                        <p>yellow</p>
+                    
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="yellow">Yellow</p>
+                        </section>
                     </div>
-                    <div class="orange-square">
-                        <p>orange</p>
+                    
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="orange">Orange</p>
+                        </section>
+                    </div>
+                    
+                </div>
+
+                <div class="numbers hide">
+
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="red">1</p>
+                        </section>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="teal">2</p>
+                        </section>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="yellow">3</p>
+                        </section>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <section>
+                            <p class="orange">4</p>
+                        </section>
                     </div>
                 </div>
-            </section>
             
-            <section class="hide" id="two">
-                <div class="numbers">
-                    <div class="yellow-square">
-                        <p>1</p>
-                    </div>
-                    <div class="red-square">
-                        <p>2</p>
-                    </div>
-                    <div class="teal-square">
-                        <p>3</p>
-                    </div>
-                    <div class="orange-square">
-                        <p>4</p>
-                    </div>
-                </div>
-            </section>
-            <section id="wrapper" class="fortunehide">
-                <p><span><a href="index.html">Click to play again</a></span></p>
-            </section>
+            <div id="fortune-wrapper" class="hide"><p><span></span></p></div>
 		</main>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="lib/main.js"></script>
 	</body>
 </html>

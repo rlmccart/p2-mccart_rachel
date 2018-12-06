@@ -1,103 +1,106 @@
-// color variables 
+const colorSection = document.getElementsByClassName('colors');
+const numberSection = document.getElementsByClassName('numbers');
+const fortuneColor = document.querySelectorAll('.colors p'); 
+const fortuneNumber = document.querySelectorAll('.numbers p'); 
 
-var colorName = document.querySelectorAll('#one p');
-var colorSquares = document.getElementById('one');
+const magicFortunes = ['The fortune you seek is in another cookie', 'That is what she said', 'You will be hungry again in one hour', 'Loading', 'It is a good day to have a good day', 'That was not chicken', 'I am worth a fortune', 'Go ask your mom', 'You have rice in your teeth', 'No lucky numbers today']; 
 
-// number variables 
-var numberName = document.querySelectorAll('#two p');
-var numberSquares = document.getElementById('two');
-var fortuneWrapper = document.getElementById('wrapper');
+const yourFortune = document.querySelector('#fortune-wrapper');
+const yourFortunePlaceholder = document.querySelector('#fortune-wrapper p span');
 
-function wrapper() {
-    var _this= this;
+//Choose a color + loop through # times that the name of the color is long
+function functionWrapper () {
     
-    //show color function 
-    var showColor = function showColor() {
-        var colorSelect = _this.parentNode;
-        colorSelect.classList.toggle('opaque');
+    const transition  = () => {
+        //toggle class transition on colorSection
+        colorSection[0].classList.toggle('transition');
     };
-    
-    var hideSquares = function hideSquares() {
-        colorSquares.classList.toggle('hide'); 
-        numberSquares.classList.toggle('hide');
-    };
-    
-    //loop
-    var loopThrough = function loopThrough() {
-        var colorSquaresText = _this.childNodes[0].nodeValue;
-        var squaresTextLength = colorSquaresText.length;
-        var squaresTextLength2 = squaresTextLength * 2;
-        
-        for (var i = 0; i <= squaresTextLength2; i++) {
-            if (i < squaresTextLength * 2) {
-                setTimeout(function() {
-                    showColor();
-                }, i * 500);
-        } else if (i === squaresTextLength2) {
-                setTimeout(function() {
-                    hideSquares();
-                }, i * 500);
-            };
-        };
-    };
-    loopThrough();
-};
-
-var clicks = 0;
-
-function countClicks() {
-    clicks++;
-};
-
-function wrapperTwo() {
-    var _thisTwo = this;
-    
-    var numberSelect = this.parentNode;
-    var showNumber = function showNumber() {
-        numberSelect.classList.toggle('opaque');
-    };
-    
-    var magicFortunes = ['The fortune you seek is in another cookie', 'That is what she said', 'You will be hungry again in one hour', 'Loading', 'It is a good day to have a good day', 'That was not chicken', 'I am worth a fortune', 'Go ask your mom', 'You have rice in your teeth', 'No lucky numbers today']; 
-    var fortuneGoesHere = document.querySelector('#wrapper p span');
-    var fortuneTextPlaceholder = document.createTextNode(''); 
-    fortuneGoesHere.appendChild(fortuneTextPlaceholder);
-    
-    var showFortune = function showFortune() {
-        fortuneWrapper.classList.toggle('hide');
-        numberSquares.classList.toggle('hide');
-        magicFortunes.sort(function (a.b) {
-            return 0.5 - Math.random();
-        });
-        var fortuneText = document.createTextNode(magicFortunes[0]);
-        fortuneGoesHere.appendChild(fortuneText);
-    };
-    
-    var loopThroughTwo = function loopThroughTwo() {
-        var numberText = _thisTwo.childNodes[0].nodeValue;
-        var numberValue = parseInt(numberText);
-        var numberValueTwo = numberValue * 2;
-        for (var i = 0; i < numberValueTwo; i++) {
-            setTimeout(function() {
-                showNumber();
-            }, i * 500);
-        };
-    };
-    var runFunction = function functionRun() {
-        if (clicks < 1) {
-            loopThroughTwo();
-        } else if (clicks === 1) {
-            showFortune();
-        };
-    };
-    runFunction(); 
-};
-
-for (var i = 0; i < colorName.length; i++) {
-    colorName[i].addEventListener('click', wrapper);
-    numberName[i].addEventListener('click', wrapperTwo);
-    numberName[i].addEventListener('click', countClicks);
+   
+    const runColor = () => {
+        let thisColorText = this.childNodes[0].nodeValue;
+        let thisColorLength = thisColorText.length;
+        for (let i = 0; i < thisColorLength * 2; i++) {
+            setTimeout(function(){ 
+            transition(); 
+            }, i * 500); 
+            }
+            //Display numbers 
+            setTimeout(function(){
+            colorSection[0].classList.add('hide');
+            colorSection[0].classList.add('show'); 
+            }, thisColorLength * 1000);
+        };  
+    runColor();
 };
 
 
+//Number; loop through once for each letter in number
+function functionWrapperTwo () {
+    
+    const transitionTwo  = () => {
+        numberSection[0].classList.toggle('transition');
+    };
+   
+    const runColorTwo = () => {
+        let thisNumber = this.childNodes[0].nodeValue;
+        let numberValue = Number(thisNumber);
+        for (let i = 0; i < numberValue * 2; i++) {
+            setTimeout(function(){ 
+            flashTransitionTwo(); 
+            }, i * 500); 
+            }
+            setTimeout(function(){
+            colorSection[0].classList.add('hide');
+            colorSection[0].classList.add('show');
+            numberSection[0].classList.remove('hide');
+            numberSection[0].classList.remove('show'); 
+            }, numberValue * 1000);
+        };  
+    runColorTwo();
+};
 
+
+//Choose number, display fortune
+function functionWrapperThree () {
+    
+    const flashTransitionThree  = () => {
+        numberSection[0].classList.toggle('transition');
+    };
+   
+    const runColorThree = () => {
+        let thisNumber = this.childNodes[0].nodeValue;
+        let numberValue = Number(thisNumber);
+        for (let i = 0; i < numberValue * 2; i++) {
+            setTimeout(function(){ 
+            flashTransitionThree(); 
+            }, i * 500); 
+            }
+            setTimeout(function(){
+            numberSection[0].classList.add('hide');
+            numberSection[0].classList.remove('show');
+            //Display fortunes
+            yourFortune.classList.remove('hide');
+            yourFortune.classList.add('fortune-show');
+            magicFortunes.sort(function(a, b){return 0.5 - Math.random()});
+            const fortuneText = document.createTextNode(magicFortunes[0]);
+            yourFortunePlaceholder.appendChild(fortuneText);
+            }, numberValue * 1000);
+        };  
+    runColorThree();
+};
+
+for (let i=0; i < fortuneColor.length; i++) {
+    fortuneColor[i].addEventListener('click', functionWrapper);
+};
+
+for (let i=0; i < fortuneNumber.length; i++) {
+    fortuneNumber[i].addEventListener('click', functionWrapperTwo);
+};
+
+for (let i=0; i < fortuneNumber.length; i++) {
+    fortuneNumber[i].addEventListener('click', functionWrapperThree);
+};
+    
+   
+    
 
