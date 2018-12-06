@@ -13,7 +13,7 @@ const yourFortunePlaceholder = document.querySelector('#fortune-wrapper p span')
 //Ask user to choose a color + loop through # times that the name of the color is long
 function functionWrapper () {
     
-    const transition  = () => {
+    const showTransition  = () => {
         //toggle class transition on colorSection
         colorSection[0].classList.toggle('transition');
     };
@@ -23,7 +23,7 @@ function functionWrapper () {
         let thisColorLength = thisColorText.length;
         for (let i = 0; i < thisColorLength * 2; i++) {
             setTimeout(function(){ 
-            transition(); 
+            showTransition(); 
             }, i * 500); 
             }
             //Display numbers 
