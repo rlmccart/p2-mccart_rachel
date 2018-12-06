@@ -136,21 +136,28 @@ h2 {
     -moz-transition: opacity 5s;
 }
 #fortune-wrapper {
-	width: 900px;
+    background-color: paleturquoise;
 	margin: auto;
-	height: 900px;
+    margin-top: 10%;
 }
 
-#fortune-wrapper p {
-    color: #2C2A4A;
+/* #fortune-wrapper p {
     text-align: center;
     margin: auto;
-}
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+} */
 
 #fortune-wrapper p span {
-	color: #2C2A4A;
+    background-color: #2C2A4A; 
+	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .fortune-show {
