@@ -3,6 +3,7 @@ const numberSection = document.getElementsByClassName('numbers');
 const colorSectionTwo = document.getElementsByClassName('colorstwo');
 const fortuneColor = document.querySelectorAll('.colors p'); 
 const fortuneNumber = document.querySelectorAll('.numbers p'); 
+const fortuneColorTwo = document.querySelectorAll('.colorstwo p'); 
 
 const magicFortunes = ['The fortune you seek is in another cookie', 'That is what she said', 'You will be hungry again in one hour', 'Loading', 'It is a good day to have a good day', 'That was not chicken', 'I am worth a fortune', 'Go ask your mom', 'You have rice in your teeth', 'No lucky numbers today']; 
 
@@ -101,7 +102,7 @@ for (let i=0; i < fortuneNumber.length; i++) {
 };
 
 for (let i=0; i < fortuneNumber.length; i++) {
-    fortuneNumber[i].addEventListener('click', functionWrapperThree);
+    fortuneColorTwo[i].addEventListener('click', functionWrapperThree);
 };
     
    
