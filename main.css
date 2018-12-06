@@ -37,7 +37,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
 }
-/* Grow */
+/* 
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -53,7 +53,7 @@ h2 {
 .hvr-grow:focus,
 .hvr-grow:active {
     transform: scale(1.2);
-}
+} Grow */
 .colors {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -63,6 +63,14 @@ h2 {
     text-transform: uppercase;
 }
 .numbers {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.numberstwo {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.25rem;
@@ -131,35 +139,52 @@ h2 {
 
 .transition {
     opacity: 0.25;
-    transition: opacity 5s;
-    -webkit-transition: opacity 5s;
-    -moz-transition: opacity 5s;
+    background-color: paleturquoise;
+    transition-timing-function: ease;
 }
 #fortune-wrapper {
     background-color: paleturquoise;
 	margin: auto;
     margin-top: 10%;
+    margin-bottom: 20%;
 }
-
-/* #fortune-wrapper p {
+#fortune-wrapper p {
     text-align: center;
     margin: auto;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-} */
+} 
 
 #fortune-wrapper p span {
     background-color: #2C2A4A; 
 	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
-.fortune-show {
-    transition: all 5s;
+/*.fortune-show {
+    transition: ease 5s;
+} */
+.reset {
+    width: 100%;
+    position: fixed;
 }
+button {
+    background-color: #ff0040; 
+	color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+button a:visited {
+    color: #ffffff;
+}
+    

@@ -84,7 +84,7 @@ function functionWrapperThree () {
             numberSectionTwo[0].classList.remove('show');
             //Show your fortune
             yourFortune.classList.remove('hide');
-            yourFortune.classList.add('fortune-show');
+            yourFortune.classList.add('show');
             magicFortunes.sort(function(a, b){return 0.5 - Math.random()});
             const fortuneText = document.createTextNode(magicFortunes[0]);
             yourFortunePlaceholder.appendChild(fortuneText);
