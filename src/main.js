@@ -101,7 +101,7 @@ for (let i=0; i < fortuneNumber.length; i++) {
     fortuneNumber[i].addEventListener('click', functionWrapperTwo);
 };
 
-for (let i=0; i < fortuneNumber.length; i++) {
+for (let i=0; i < fortuneNumberTwo.length; i++) {
     fortuneNumberTwo[i].addEventListener('click', functionWrapperThree);
 };
     
