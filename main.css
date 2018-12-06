@@ -23,10 +23,6 @@ h2 {
     padding-bottom: 40px;
     color: #53536D; 
 }
-/*.col-lg-6 {
-	border-color: transparent;
-	line-height: 130px;
-} */
 .col-lg-6 {
     border-color: transparent;
 	line-height: 130px;
@@ -37,23 +33,6 @@ h2 {
     justify-content: center;
     flex-direction: column;
 }
-/* 
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
-}
-
-.hvr-grow:hover,
-.hvr-grow:focus,
-.hvr-grow:active {
-    transform: scale(1.2);
-} Grow */
 .colors {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -79,44 +58,15 @@ h2 {
     text-transform: uppercase;
 }
 .red {
- /* width: 45%; 
-    height: 45%; 
-    float: left;
-    margin-left: 3%;
-    margin-bottom: 1%;
-    padding-bottom: 15%; 
-    position: relative; */
     background-color: #ff0040;
 }
 .teal {
-/*  width: 45%; 
-    height: 45%;  
-    float: right;
-    margin-right: 3%;
-    margin-bottom: 1%;
-    padding-bottom: 15%; 
-    position: relative; */
     background-color: #00a6a6;
 }
 .yellow {
-/*  width: 45%; 
-    height: 45%;  
-    float: left;
-    margin-left: 3%;
-    margin-top: 1%;
-    margin-bottom: 3%;
-    padding-bottom: 15%; 
-    position: relative; */
     background-color: #efca08;
 }
 .orange {
-/*  width: 45%; 
-    height: 45%; 
-    float: right;
-    margin-right: 3%;
-    margin-top: 1%;
-    padding-bottom: 15%; 
-    position: relative; */
     background-color: #f49f0a;
 }
 .hide {
@@ -125,18 +75,6 @@ h2 {
 .show {
     display: block;
 }
-/*#wrapper {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.25rem;
-    color: #2C2A4A;
-    padding-top: 200px;
-    background-color: transparent;
-    border: transparent; 
-    text-transform: uppercase;
-    margin-top: 30%;
-} */
-
 .transition {
     opacity: 0.25;
     background-color: paleturquoise;
@@ -152,33 +90,29 @@ h2 {
     margin: auto;
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 } 
 
 #fortune-wrapper p span {
     background-color: #2C2A4A; 
 	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    padding-left: 4%;
-    padding-right: 4%;
+    font-size: 1.1rem;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
 }
-
-/*.fortune-show {
-    transition: ease 5s;
-} */
-/*.reset {
+.reset {
     width: 100%;
-    position: fixed;
-} */
+    margin-bottom: 10%;
+} 
 button {
     background-color: #ff0040; 
 	color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
-    margin-top: 40px;
+    margin-top: 5%;
     padding-left: 1%;
     padding-right: 1%;
     padding-top: 0.5%;
